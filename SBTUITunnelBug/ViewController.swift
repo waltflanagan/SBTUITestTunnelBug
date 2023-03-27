@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SBTUITestTunnelServer
 
 class ViewController: UIViewController {
 

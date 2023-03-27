@@ -13,6 +13,7 @@
 		16B552DC29D236FE00EC2FC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B552DA29D236FE00EC2FC7 /* Main.storyboard */; };
 		16B552DE29D236FF00EC2FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16B552DD29D236FF00EC2FC7 /* Assets.xcassets */; };
 		16B552E129D236FF00EC2FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B552DF29D236FF00EC2FC7 /* LaunchScreen.storyboard */; };
+		16B552EA29D237C100EC2FC7 /* SBTUITestTunnelServer in Frameworks */ = {isa = PBXBuildFile; productRef = 16B552E929D237C100EC2FC7 /* SBTUITestTunnelServer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B552EA29D237C100EC2FC7 /* SBTUITestTunnelServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SBTUITunnelBug;
+			packageProductDependencies = (
+				16B552E929D237C100EC2FC7 /* SBTUITestTunnelServer */,
+			);
 			productName = SBTUITunnelBug;
 			productReference = 16B552D129D236FE00EC2FC7 /* SBTUITunnelBug.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 16B552C829D236FE00EC2FC7;
+			packageReferences = (
+				16B552E829D237C100EC2FC7 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */,
+			);
 			productRefGroup = 16B552D229D236FE00EC2FC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -287,6 +295,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TKPLNK48B;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SBTUITunnelBug/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SBTUITestTunnel.SBTUITunnelBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,6 +325,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TKPLNK48B;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SBTUITunnelBug/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -329,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SBTUITestTunnel.SBTUITunnelBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -356,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		16B552E829D237C100EC2FC7 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Subito-it/SBTUITestTunnel.git";
+			requirement = {
+				kind = revision;
+				revision = 1c9b846f95ff683d66c732f8a6fe6d604f50ec16;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		16B552E929D237C100EC2FC7 /* SBTUITestTunnelServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 16B552E829D237C100EC2FC7 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
+			productName = SBTUITestTunnelServer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 16B552C929D236FE00EC2FC7 /* Project object */;
 }
