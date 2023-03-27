@@ -12,9 +12,10 @@
     {
       "identity" : "sbtuitesttunnel",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Subito-it/SBTUITestTunnel.git",
+      "location" : "https://github.com/simonurzua/SBTUITestTunnel.git",
       "state" : {
-        "revision" : "1c9b846f95ff683d66c732f8a6fe6d604f50ec16"
+        "branch" : "fix-nondebug-imports",
+        "revision" : "1dd69732695be58b288d40bbaa718a2925d98e0a"
       }
     }
   ],
